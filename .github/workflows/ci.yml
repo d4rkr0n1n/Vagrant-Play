@@ -18,6 +18,6 @@ jobs:
         run: echo Hello, world!
       - name: Run a multi-line script
         run: |
-          # sudo apt install virtualbox -y
           sudo apt-get update && sudo apt install vagrant -y
-          echo test, and deploy your project.
+          vagrant --version
+          vagrant validate
