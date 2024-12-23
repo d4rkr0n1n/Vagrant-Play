@@ -19,5 +19,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           # sudo apt install virtualbox -y
-          sudo apt install vagrant -y
+          sudo apt-get update && sudo apt install vagrant -y
           echo test, and deploy your project.
